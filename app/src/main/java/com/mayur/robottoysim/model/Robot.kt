@@ -2,8 +2,9 @@ package com.mayur.robottoysim.model
 
 import java.util.logging.Logger
 
-data class Robot(private val facing: Direction,
-                 private val position: Position = Position()
+data class Robot(
+    val facing: Direction,
+    val position: Position = Position()
 ) {
 
     private val logger = Logger.getLogger(Robot::class.java.name)
